@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>E-CYCLE · UIT HPU, Shimla</title>
+<style>
+:root{--g:#14532D;--e:#16A34A;--bg:#F8FAF8;--tx:#1F2937;--card:#fff;--ln:#dde5de;--mu:#5b6770;--on:#fff;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--g:#4ade80;--e:#22c55e;--bg:#0f1712;--tx:#e6ece7;--card:#17211a;--ln:#2a3a2e;--mu:#9db0a2;--on:#06240f;color-scheme:dark}}
+:root[data-theme="dark"]{--g:#4ade80;--e:#22c55e;--bg:#0f1712;--tx:#e6ece7;--card:#17211a;--ln:#2a3a2e;--mu:#9db0a2;--on:#06240f;color-scheme:dark}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;line-height:1.2;color:var(--g);margin:0 0 .5em}
+h1{font-size:clamp(2rem,6vw,3.4rem)}h2{font-size:1.7rem}a{color:var(--g)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);border-bottom:1px solid var(--ln)}
+nav{max-width:1100px;margin:auto;display:flex;align-items:center;gap:.25rem;padding:.6rem 1rem;overflow-x:auto}
+.brand{display:flex;align-items:center;gap:.5rem;font-weight:700;color:var(--g);text-decoration:none;margin-right:1rem;white-space:nowrap}
+nav a.l{padding:.35rem .6rem;border-radius:8px;text-decoration:none;color:var(--tx);font-size:.92rem;white-space:nowrap}
+nav a.l:hover,nav a.on{background:var(--ln)}
+main{max-width:1100px;margin:auto;padding:1rem}
+section.p{display:none;animation:in .25s ease}section.p.show{display:block}
+@keyframes in{from{opacity:0;transform:translateY(6px)}}@media(prefers-reduced-motion:reduce){section.p{animation:none}}
+.hero{padding:3rem 0 2rem}.hero p{font-size:1.15rem;max-width:40rem;color:var(--mu)}
+.btn{display:inline-block;background:var(--g);color:var(--on);border:0;padding:.7rem 1.2rem;border-radius:10px;font:inherit;font-weight:600;cursor:pointer;text-decoration:none;margin:.25rem .5rem .25rem 0}
+.btn.o{background:none;color:var(--g);border:1.5px solid var(--g)}
+.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--ln);border-radius:14px;padding:1.1rem}
+.card h3{font-size:1.1rem}.big{font-size:2rem;font-weight:700;color:var(--g)}.mu{color:var(--mu);font-size:.9rem}
+.tag{display:inline-block;font-size:.75rem;padding:.1rem .5rem;border-radius:99px;background:var(--ln);color:var(--mu)}
+form label{display:block;font-weight:600;font-size:.9rem;margin:.7rem 0 .2rem}
+input,select,textarea{width:100%;padding:.6rem;border:1px solid var(--ln);border-radius:8px;background:var(--card);color:var(--tx);font:inherit}
+.row{display:grid;gap:0 1rem;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.err{color:#b91c1c;font-size:.85rem}.ok{background:var(--card);border:2px solid var(--e);border-radius:14px;padding:1rem;margin-top:1rem}
+.tl{list-style:none;padding:0;margin:1rem 0;border-left:3px solid var(--e)}.tl li{padding:0 0 1rem 1rem;position:relative}
+.tl li:before{content:"";position:absolute;left:-9px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--e)}
+.wrap{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.88rem}th,td{padding:.45rem;border-bottom:1px solid var(--ln);text-align:left;vertical-align:top}
+details{background:var(--card);border:1px solid var(--ln);border-radius:10px;padding:.7rem 1rem;margin:.5rem 0}summary{cursor:pointer;font-weight:600}
+.note{background:var(--ln);border-radius:10px;padding:.6rem .9rem;font-size:.88rem;margin:1rem 0}
+footer{max-width:1100px;margin:2rem auto;padding:1rem;color:var(--mu);font-size:.85rem;border-top:1px solid var(--ln)}
+.bar{display:flex;align-items:center;gap:.5rem;margin:.3rem 0;font-size:.85rem}.bar i{display:block;height:14px;background:var(--e);border-radius:4px;min-width:2px}
+.bar span:first-child{width:9rem;flex:none}
+@media print{header,footer,.np{display:none}}
+</style></head><body>
+<header><nav aria-label="Main">
+<a class="brand" href="#home"><svg width="30" height="30" viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="14" fill="none" stroke="#16A34A" stroke-width="2.5" stroke-dasharray="70 18"/><path d="M16 24V12M16 17l5-4M16 20l-4-3" stroke="#14532D" stroke-width="2" stroke-linecap="round" fill="none"/><circle cx="21" cy="13" r="1.6" fill="#16A34A"/></svg>E-CYCLE</a>
+<a class="l" href="#home">Home</a><a class="l" href="#about">About</a><a class="l" href="#submit">Submit</a><a class="l" href="#track">Track</a><a class="l" href="#drives">Drives</a><a class="l" href="#centre">Centre</a><a class="l" href="#learn">Learn</a><a class="l" href="#team">Team</a><a class="l" href="#impact">Impact</a><a class="l" href="#news">News</a><a class="l" href="#gallery">Gallery</a><a class="l" href="#contact">Contact</a><a class="l" href="#admin">Admin</a><a class="l" href="#reports">Reports</a><a class="l" href="#archive">Archive</a>
+</nav></header>
+<main>
+<section class="p" id="home"><div class="hero"><h1>Give Your E-Waste a Responsible Future.</h1><p>Building a cleaner, smarter and more sustainable campus through responsible electronic waste management.</p><a class="btn" href="#submit">Submit E-Waste</a><a class="btn o" href="#about">Explore the Initiative</a></div>
+<h2>How it works</h2><div class="grid"><div class="card"><div class="big">1</div><h3>Submit</h3><p class="mu">Describe your item and choose a handover method.</p></div><div class="card"><div class="big">2</div><h3>Review</h3><p class="mu">The team reviews and approves your request.</p></div><div class="card"><div class="big">3</div><h3>Hand over</h3><p class="mu">Drop off or schedule collection.</p></div><div class="card"><div class="big">4</div><h3>Recycle</h3><p class="mu">Items go to a recycler only after its authorization is verified.</p></div></div>
+<h2 style="margin-top:2rem">Accepted categories</h2><p class="mu">Final list to be confirmed by the E-CYCLE team.</p><div id="cats"></div>
+<h2 style="margin-top:2rem">Impact so far</h2><div class="grid" id="homeStats"></div>
+<h2 style="margin-top:2rem">Upcoming drives</h2><div id="homeDrives"></div>
+<div class="card" style="margin-top:2rem"><h3>Ready to hand over a device?</h3><a class="btn" href="#submit">Submit E-Waste</a><a class="btn o" href="#learn">Learn first</a></div></section>
+
+<section class="p" id="about"><h2>About the Initiative</h2><p>E-CYCLE is a campus sustainability initiative of UIT HPU, Shimla, to help students, faculty and staff dispose of electronic waste responsibly.</p><div class="note">Official mission statement, approvals and partnerships: <b>to be confirmed</b> by the university. Nothing here implies endorsement until the team updates this page.</div></section>
+
+<section class="p" id="submit"><h2>Submit E-Waste</h2>
+<form id="sf" novalidate><div class="row">
+<div><label for="n">Name</label><input id="n" required maxlength="80"></div><div><label for="em">Email</label><input id="em" type="email" required></div>
+<div><label for="ph">Phone (optional)</label><input id="ph" inputmode="tel" maxlength="15"></div><div><label for="dp">Department</label><input id="dp" required maxlength="80" placeholder="Your department"></div>
+<div><label for="uc">User category</label><select id="uc"><option>Student</option><option>Faculty</option><option>Staff</option><option>Other</option></select></div>
+<div><label for="ct">E-waste category</label><select id="ct"></select></div>
+<div><label for="it">Item name</label><input id="it" required maxlength="120"></div><div><label for="qt">Quantity</label><input id="qt" type="number" min="1" max="500" value="1"></div>
+<div><label for="cd">Working condition</label><select id="cd"><option>Working</option><option>Partially working</option><option>Not working</option><option>Unknown</option></select></div>
+<div><label for="wt">Approx. weight (kg)</label><input id="wt" type="number" min="0" step="0.1"></div>
+<div><label for="hm">Preferred handover</label><select id="hm"><option>Drop at collection centre</option><option>Pickup from department</option><option>At a collection drive</option></select></div></div>
+<label for="ds">Description</label><textarea id="ds" rows="3" maxlength="1000"></textarea>
+<label for="im">Photo of the item (optional, JPG/PNG/WebP, max 5 MB)</label><input id="im" type="file" accept="image/jpeg,image/png,image/webp"><p class="err" id="ime" role="alert"></p><div id="imp"></div>
+<label><input type="checkbox" id="cs" style="width:auto"> I consent to my details being used to process this request.</label>
+<p class="err" id="se" role="alert"></p><button class="btn" type="submit">Submit request</button></form><div id="sr"></div></section>
+
+<section class="p" id="track"><h2>Track Request</h2><form id="tf"><div class="row"><div><label for="ti">Request ID</label><input id="ti" placeholder="ECY-2026-000001" required></div><div><label for="tk">Tracking key</label><input id="tk" required></div></div><p class="err" id="te" role="alert"></p><button class="btn" type="submit">Track</button></form><div id="tr"></div></section>
+
+<section class="p" id="drives"><h2>Collection Drives</h2><div id="dl"></div><h3 style="margin-top:2rem">Volunteer registration</h3><form id="vf" class="row"><div><label for="vn">Name</label><input id="vn" required></div><div><label for="ve">Email</label><input id="ve" type="email" required></div><div style="align-self:end"><button class="btn" type="submit">Register as volunteer</button></div></form><p id="vm" class="mu"></p></section>
+
+<section class="p" id="centre"><h2>Collection Centre</h2><div class="card"><p><b>Location:</b> to be confirmed</p><p><b>Opening hours:</b> to be confirmed</p><p><b>Contact:</b> to be confirmed</p></div></section>
+
+<section class="p" id="learn"><h2>Awareness &amp; Education</h2>
+<details><summary>What is e-waste?</summary><p>Discarded electrical and electronic equipment: phones, laptops, chargers, batteries, lab and office equipment.</p></details>
+<details><summary>Environmental impact</summary><p>E-waste can contain lead, mercury, cadmium and other hazardous materials. Burning or dumping it pollutes soil, water and air.</p></details>
+<details><summary>Safe disposal</summary><p>Do not put e-waste in household bins or sell it to informal dismantlers. Use an authorized recycler through the E-CYCLE team.</p></details>
+<details><summary>Battery safety</summary><p>Never puncture or crush batteries. If a battery is swollen or hot, stop using it, keep it away from flammable items and tell the team when handing over.</p></details>
+<details><summary>Data wiping before handover</summary><p>Back up what you need, sign out of accounts, then factory-reset the device. Remove SIM and memory cards.</p></details>
+<details><summary>Reuse and refurbishment</summary><p>Working devices may be reused or repaired. Say so in your request.</p></details>
+<h3 style="margin-top:1.5rem">Awareness quiz</h3><div id="qz" class="card"></div></section>
+
+<section class="p" id="team"><h2>Our Team</h2><p class="mu">Profiles for the faculty coordinator, student coordinator, team members and volunteers will appear here once confirmed. No names have been assumed.</p><div class="grid"><div class="card"><span class="tag">Faculty coordinator</span><p class="mu">To be confirmed</p></div><div class="card"><span class="tag">Student coordinator</span><p class="mu">To be confirmed</p></div><div class="card"><span class="tag">Team members</span><p class="mu">To be confirmed</p></div></div></section>
+
+<section class="p" id="impact"><h2>Impact &amp; Reports</h2><p class="mu">Computed only from requests recorded in this browser. Weight counts requests marked Received or later, using the submitter's approximate weight.</p><div class="grid" id="imp"></div></section>
+<section class="p" id="news"><h2>News &amp; Events</h2><div class="card"><p class="mu">No news published yet.</p></div></section>
+<section class="p" id="gallery"><h2>Gallery</h2><div class="card"><p class="mu">No photos added yet.</p></div></section>
+<section class="p" id="contact"><h2>Contact</h2><div class="card"><p>Email and phone: <b>to be confirmed</b></p><p class="mu">A contact form requires the server backend planned for the next stage.</p></div></section>
+<section class="p" id="privacy"><h2>Privacy Policy</h2><div class="note">Draft for review by the university. Not final.</div><p>This prototype stores what you enter only in your own browser. In a live deployment we will collect only what is needed to process a request, show no personal data on public tracking pages, and keep data for a retention period the university confirms.</p></section>
+
+<section class="p" id="reports"><h2>Formal Reports</h2><div class="note">Generates a PDF from the requests recorded in this browser. Add before-and-after recycling photos of the devices, plus your remarks, then download. Recycler handovers are not tracked in this version, so reports never name a recycler as authorized.</div>
+<form id="rf"><div class="row"><div><label for="rt">Report title</label><input id="rt" required maxlength="120" value="E-Waste Collection Report"></div><div><label for="rb">Prepared by (name and role)</label><input id="rb" required maxlength="120"></div><div><label for="rfrom">From</label><input id="rfrom" type="date"></div><div><label for="rto">To</label><input id="rto" type="date"></div></div>
+<label for="rs">Summary and remarks</label><textarea id="rs" rows="5" maxlength="2000"></textarea>
+<label for="rp">Device photos, before and after recycling (JPG, PNG or WebP, max 5 MB each, up to 12). Mark each photo as Before or After and link it to a request.</label><input id="rp" type="file" multiple accept="image/jpeg,image/png,image/webp"><p class="err" id="rpe" role="alert"></p><div id="rpl"></div>
+<button class="btn" type="submit">Generate PDF report</button></form><p id="rm2" class="mu" role="status"></p></section>
+
+<section class="p" id="archive"><h2>Archive</h2><div class="note">Saved reports (with their before and after photos) and all submitted requests. Stored in this browser only, so clearing browser data or using another device will not show them. Download important PDFs and keep copies.</div>
+<h3>Saved reports</h3><div class="wrap"><table><thead><tr><th>Ref</th><th>Title</th><th>Period</th><th>Prepared by</th><th>Saved</th><th>Photos</th><th></th></tr></thead><tbody id="arr"></tbody></table></div>
+<h3 style="margin-top:1.5rem">Submitted requests</h3><label for="asq">Search</label><input id="asq" placeholder="ID, item, name, department or status"><div class="wrap"><table><thead><tr><th>ID</th><th>Submitted</th><th>By</th><th>Item</th><th>Department</th><th>Status</th><th>Photo</th></tr></thead><tbody id="asr"></tbody></table></div>
+<p class="np"><button class="btn o" id="acsv">Export CSV</button><button class="btn o" onclick="print()">Print list</button></p></section>
+
+<section class="p" id="admin"><h2>Admin (prototype)</h2><div class="note">No login yet. Real sign-in, roles and a shared database need the Supabase backend. Anyone opening this page in their own browser sees only their own local data.</div>
+<div class="grid" id="as"></div>
+<h3 style="margin-top:1.5rem">Requests</h3><div class="wrap"><table><thead><tr><th>ID</th><th>Item</th><th>Dept</th><th>Status</th><th>Public remark</th><th></th></tr></thead><tbody id="ar"></tbody></table></div>
+<p class="np"><button class="btn o" id="csv">Export CSV</button><button class="btn o" onclick="print()">Print report</button></p>
+<h3>By category</h3><div id="ac"></div><h3>By department</h3><div id="ad"></div>
+<h3 style="margin-top:1.5rem">Add collection drive</h3><form id="df" class="row"><div><label for="dt">Title</label><input id="dt" required></div><div><label for="dd">Date</label><input id="dd" type="date" required></div><div><label for="dloc">Location</label><input id="dloc" required></div><div style="align-self:end"><button class="btn" type="submit">Add drive</button></div></form>
+<p><button class="btn o" id="clr">Clear all local data</button></p></section>
+</main>
+<footer>E-CYCLE · UIT HPU, Shimla · Prototype: unconfirmed details are labelled “to be confirmed”.</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script>
+const CATS=["Computers & laptops","Mobile phones & tablets","Batteries","Chargers & cables","Printers & peripherals","Lab / electronic equipment","Other"];
+const ST=["Submitted","Under Review","Approved","Collection Scheduled","Received","Segregated","Sent to Authorized Recycler","Completed","Rejected"];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const get=k=>{try{return JSON.parse(localStorage.getItem(k))||[]}catch(e){return []}};
+const put=(k,v)=>{try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}};
+const R=()=>get("ecy_r");
+const recd=r=>ST.indexOf(r.status)>=4&&r.status!=="Rejected";
+$("#cats").innerHTML='<div class="grid">'+CATS.map(c=>`<div class="card">${esc(c)}</div>`).join("")+"</div>";
+$("#ct").innerHTML=CATS.map(c=>`<option>${esc(c)}</option>`).join("");
+function bars(el,map){const e=Object.entries(map);if(!e.length){el.innerHTML='<p class="mu">No data yet.</p>';return}const m=Math.max(...e.map(x=>x[1]));el.innerHTML=e.map(([k,v])=>`<div class="bar"><span>${esc(k)}</span><i style="width:${v/m*60}%"></i><span>${v}</span></div>`).join("")}
+function stats(){const r=R(),d=get("ecy_d");const w=r.filter(recd).reduce((a,x)=>a+(+x.wt||0),0);
+return[["Total submissions",r.length],["Pending",r.filter(x=>["Submitted","Under Review"].includes(x.status)).length],["Approved",r.filter(x=>x.status==="Approved").length],["Completed",r.filter(x=>x.status==="Completed").length],["Weight received (kg)",w.toFixed(1)],["Collection drives",d.length]]}
+const cardsHtml=a=>a.map(([k,v])=>`<div class="card"><div class="big">${v}</div><div class="mu">${k}</div></div>`).join("");
+function drivesHtml(adm){const d=get("ecy_d");return d.length?d.map((x,i)=>`<div class="card" style="margin:.5rem 0"><h3>${esc(x.t)}</h3><p class="mu">${esc(x.d)} · ${esc(x.l)}</p></div>`).join(""):'<div class="card"><p class="mu">No drives scheduled yet.</p></div>'}
+function render(){
+ $("#homeStats").innerHTML=cardsHtml(stats().slice(0,1).concat(stats().slice(3,5)));
+ $("#homeDrives").innerHTML=drivesHtml();$("#dl").innerHTML=drivesHtml();
+ $("#imp").innerHTML=cardsHtml(stats());
+ $("#as").innerHTML=cardsHtml(stats());
+ const r=R(),cm={},dm={};r.forEach(x=>{cm[x.cat]=(cm[x.cat]||0)+1;dm[x.dept]=(dm[x.dept]||0)+1});bars($("#ac"),cm);bars($("#ad"),dm);
+ $("#ar").innerHTML=r.length?r.map((x,i)=>`<tr><td>${esc(x.id)}</td><td>${esc(x.item)} ×${esc(x.qty)}${(x.img||"").startsWith("data:image/jpeg;base64,")?`<br><img src="${x.img}" alt="Submitted photo" style="max-width:80px;border-radius:6px;margin-top:.3rem">`:""}</td><td>${esc(x.dept)}</td><td><select data-i="${i}" class="st">${ST.map(s=>`<option${s===x.status?" selected":""}>${s}</option>`).join("")}</select></td><td><input data-i="${i}" class="rm" maxlength="200" placeholder="Visible to requester"></td><td><button class="btn o sv" data-i="${i}">Save</button></td></tr>`).join(""):'<tr><td colspan="6" class="mu">No requests yet.</td></tr>';
+}
+function route(){const h=(location.hash||"#home").slice(1);const id=document.getElementById(h)&&document.getElementById(h).classList.contains("p")?h:"home";
+ document.querySelectorAll("section.p").forEach(s=>s.classList.toggle("show",s.id===id));
+ document.querySelectorAll("nav a.l").forEach(a=>a.classList.toggle("on",a.getAttribute("href")==="#"+id));render();scrollTo(0,0)}
+addEventListener("hashchange",()=>{route();listPh();arc()});
+function rk(){const a=new Uint8Array(5);crypto.getRandomValues(a);return Array.from(a,b=>"ABCDEFGHJKLMNPQRSTUVWXYZ23456789"[b%32]).join("")}
+let IMG="";
+$("#im").addEventListener("change",e=>{const f=e.target.files[0],m=$("#ime");IMG="";$("#imp").innerHTML="";m.textContent="";if(!f)return;
+ if(!["image/jpeg","image/png","image/webp"].includes(f.type)){m.textContent="Use a JPG, PNG or WebP image.";e.target.value="";return}
+ if(f.size>5*1024*1024){m.textContent="Image must be under 5 MB.";e.target.value="";return}
+ const fr=new FileReader();fr.onerror=()=>{m.textContent="Could not read this file."};
+ fr.onload=()=>{const i=new Image();i.onerror=()=>{m.textContent="This file is not a valid image."};
+ i.onload=()=>{const s=Math.min(1,800/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=Math.round(i.width*s);c.height=Math.round(i.height*s);c.getContext("2d").drawImage(i,0,0,c.width,c.height);IMG=c.toDataURL("image/jpeg",.7);$("#imp").innerHTML='<img src="'+IMG+'" alt="Preview of the item" style="max-width:160px;border-radius:8px;margin-top:.4rem">'};i.src=fr.result};fr.readAsDataURL(f)});
+$("#sf").addEventListener("submit",e=>{e.preventDefault();const v=i=>$("#"+i).value.trim(),er=$("#se");
+ if(v("n").length<2||!/^\S+@\S+\.\S+$/.test(v("em"))||!v("dp")||v("it").length<2){er.textContent="Please fill name, a valid email, department and item name.";return}
+ const q=+v("qt");if(!(q>=1&&q<=500)){er.textContent="Quantity must be 1–500.";return}
+ if(v("wt")&&+v("wt")<0){er.textContent="Weight cannot be negative.";return}
+ if(v("ph")&&!/^[0-9+\-\s]{7,15}$/.test(v("ph"))){er.textContent="Enter a valid phone number or leave it empty.";return}
+ if(!$("#cs").checked){er.textContent="Consent is required.";return}er.textContent="";
+ const r=R(),id="ECY-"+new Date().getFullYear()+"-"+String(r.length+1).padStart(6,"0"),key=rk(),now=new Date().toLocaleString();
+ r.push({id,key,name:v("n"),email:v("em"),phone:v("ph"),dept:v("dp"),uc:v("uc"),cat:v("ct"),item:v("it"),qty:q,cond:v("cd"),wt:v("wt"),desc:v("ds"),img:IMG,hm:v("hm"),status:"Submitted",ts:Date.now(),hist:[{s:"Submitted",t:now,r:"Request received."}]});put("ecy_r",r);
+ $("#sr").innerHTML=`<div class="ok"><h3>Request submitted</h3><p>Request ID: <b>${id}</b><br>Tracking key: <b>${key}</b></p><p class="mu">Save both: you need them to track this request.</p></div>`;$("#sf").reset();IMG="";$("#imp").innerHTML="";render()});
+$("#tf").addEventListener("submit",e=>{e.preventDefault();const x=R().find(r=>r.id===$("#ti").value.trim().toUpperCase()&&r.key===$("#tk").value.trim().toUpperCase());
+ if(!x){$("#te").textContent="No matching request. Check the ID and key.";$("#tr").innerHTML="";return}$("#te").textContent="";
+ $("#tr").innerHTML=`<h3>${esc(x.id)}: ${esc(x.status)}</h3><ul class="tl">${x.hist.map(h=>`<li><b>${esc(h.s)}</b> <span class="mu">${esc(h.t)}</span><br>${esc(h.r)}</li>`).join("")}</ul>`});
+$("#ar").addEventListener("click",e=>{const b=e.target.closest(".sv");if(!b)return;const i=+b.dataset.i,r=R(),s=$(`.st[data-i="${i}"]`).value,m=$(`.rm[data-i="${i}"]`).value.trim();
+ r[i].status=s;r[i].hist.push({s,t:new Date().toLocaleString(),r:m||"Status updated."});put("ecy_r",r);render()});
+$("#df").addEventListener("submit",e=>{e.preventDefault();const d=get("ecy_d");d.push({t:$("#dt").value.trim(),d:$("#dd").value,l:$("#dloc").value.trim()});put("ecy_d",d);$("#df").reset();render()});
+$("#vf").addEventListener("submit",e=>{e.preventDefault();const v=get("ecy_v");v.push({n:$("#vn").value.trim(),e:$("#ve").value.trim()});put("ecy_v",v);$("#vf").reset();$("#vm").textContent="Thank you. Your volunteer interest was saved in this browser."});
+$("#csv").addEventListener("click",()=>{const f=["id","item","qty","cat","dept","uc","cond","wt","hm","status"];const q=v=>'"'+String(v??"").replace(/"/g,'""').replace(/^([=+\-@])/,"'$1")+'"';
+ const t=[f.join(",")].concat(R().map(r=>f.map(k=>q(r[k])).join(","))).join("\n");const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([t],{type:"text/csv"}));a.download="ecycle-requests.csv";a.click()});
+$("#clr").addEventListener("click",()=>{if(confirm("Delete all locally stored E-CYCLE data?")){["ecy_r","ecy_d","ecy_v"].forEach(k=>{try{localStorage.removeItem(k)}catch(e){}});render()}});
+const Q=[["What should you do before handing over a phone or laptop?",["Leave it as is","Back up, sign out and factory-reset","Remove only the charger"],1],["A battery is swollen. What now?",["Stop using it and tell the team","Puncture it to release pressure","Charge it overnight"],0],["Where should e-waste go?",["Household bin","Informal scrap dealer","An authorized recycler"],2],["Why is e-waste hazardous?",["It can contain lead, mercury and cadmium","It is always radioactive","It is heavier than other waste"],0]];
+let qi=0,qs=0;function quiz(){const z=$("#qz");if(qi>=Q.length){z.innerHTML=`<h3>Score: ${qs}/${Q.length}</h3><button class="btn" id="qr">Try again</button>`;$("#qr").onclick=()=>{qi=0;qs=0;quiz()};return}
+ const q=Q[qi];z.innerHTML=`<p><b>${qi+1}. ${esc(q[0])}</b></p>`+q[1].map((o,i)=>`<button class="btn o" data-i="${i}" style="display:block;margin:.3rem 0">${esc(o)}</button>`).join("")+'<p id="qf" class="mu"></p>';
+ z.querySelectorAll("button").forEach(b=>b.onclick=()=>{const ok=+b.dataset.i===q[2];if(ok)qs++;$("#qf").textContent=ok?"Correct.":"Not quite. Correct: "+q[1][q[2]];z.querySelectorAll("button").forEach(x=>x.disabled=true);setTimeout(()=>{qi++;quiz()},1300)})}
+let PH=[];
+const comp=f=>new Promise((ok,no)=>{const fr=new FileReader();fr.onerror=()=>no();fr.onload=()=>{const i=new Image();i.onerror=()=>no();i.onload=()=>{const s=Math.min(1,1000/Math.max(i.width,i.height)),c=document.createElement("canvas");c.width=Math.round(i.width*s);c.height=Math.round(i.height*s);c.getContext("2d").drawImage(i,0,0,c.width,c.height);ok({d:c.toDataURL("image/jpeg",.75),w:c.width,h:c.height,c:""})};i.src=fr.result};fr.readAsDataURL(f)});
+const listPh=()=>{const rs=R();$("#rpl").innerHTML=PH.map((p,i)=>`<div class="card" style="display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;margin:.4rem 0"><img src="${p.d}" alt="Device photo ${i+1}" style="width:70px;border-radius:6px"><select data-i="${i}" data-f="s" aria-label="Stage of photo ${i+1}" style="width:auto"><option${p.s==="After"?"":" selected"}>Before</option><option${p.s==="After"?" selected":""}>After</option></select><select data-i="${i}" data-f="q" aria-label="Request for photo ${i+1}" style="width:auto;max-width:14rem"><option value="">Not linked to a request</option>${rs.map(x=>`<option value="${esc(x.id)}"${x.id===p.q?" selected":""}>${esc(x.id)} - ${esc(x.item)}</option>`).join("")}</select><input data-i="${i}" class="cap" maxlength="120" aria-label="Caption for photo ${i+1}" placeholder="Caption: what does this photo show?" value="${esc(p.c)}" style="flex:1;min-width:10rem"><button type="button" class="btn o" data-r="${i}">Remove</button></div>`).join("")};
+$("#rpl").addEventListener("input",e=>{if(e.target.classList.contains("cap"))PH[+e.target.dataset.i].c=e.target.value});
+$("#rpl").addEventListener("change",e=>{const f=e.target.dataset.f;if(f)PH[+e.target.dataset.i][f]=e.target.value});
+$("#rpl").addEventListener("click",e=>{const b=e.target.closest("[data-r]");if(b){PH.splice(+b.dataset.r,1);listPh()}});
+$("#rp").addEventListener("change",async e=>{const m=$("#rpe");m.textContent="";for(const f of e.target.files){if(PH.length>=12){m.textContent="Maximum 12 photos.";break}if(!["image/jpeg","image/png","image/webp"].includes(f.type)||f.size>5242880){m.textContent="Skipped "+f.name+": must be JPG, PNG or WebP under 5 MB.";continue}try{PH.push({...await comp(f),s:"Before",q:""})}catch(x){m.textContent="Could not read "+f.name+"."}}e.target.value="";listPh()});
+$("#rf").addEventListener("submit",e=>{e.preventDefault();const m=$("#rm2");
+ if(!window.jspdf){m.textContent="The PDF library did not load. Check your internet connection and reload the page.";return}
+ const t=$("#rt").value.trim(),by=$("#rb").value.trim(),fr=$("#rfrom").value,to=$("#rto").value,sm=$("#rs").value.trim();
+ if(!t||!by){m.textContent="Title and prepared-by are required.";return}
+ if(fr&&to&&fr>to){m.textContent="The From date must not be after the To date.";return}
+ const a=fr?new Date(fr).getTime():0,b=to?new Date(to).getTime()+864e5:Infinity;
+ const rq=R().filter(x=>!x.ts||(x.ts>=a&&x.ts<b)),dr=get("ecy_d").filter(x=>(!fr||x.d>=fr)&&(!to||x.d<=to));
+ const doc=new window.jspdf.jsPDF({unit:"mm",format:"a4"}),W=210,M=15,G=[20,83,45];let y=0;
+ const ref="REP-"+new Date().getFullYear()+"-"+String(get("ecy_rep").length+1).padStart(3,"0");
+ const need=h=>{if(y+h>280){doc.addPage();y=20}};
+ const tx=(s,sz,bd,col)=>{doc.setFont("helvetica",bd?"bold":"normal");doc.setFontSize(sz);doc.setTextColor(...(col||[31,41,55]));doc.splitTextToSize(String(s),W-2*M).forEach(l=>{need(sz*.5);doc.text(l,M,y);y+=sz*.45});y+=1.5};
+ const tbl=(hd,rows,cw)=>{need(14);doc.setFillColor(222,229,222);doc.rect(M,y-4,W-2*M,6,"F");doc.setFont("helvetica","bold");doc.setFontSize(9);doc.setTextColor(31,41,55);let x=M+1;hd.forEach((h,i)=>{doc.text(h,x,y);x+=cw[i]});y+=5;doc.setFont("helvetica","normal");rows.forEach(r=>{const ls=r.map((c,i)=>doc.splitTextToSize(String(c),cw[i]-2)),h=Math.max(...ls.map(l=>l.length))*4+1.5;need(h);let x=M+1;ls.forEach((l,i)=>{doc.text(l,x,y);x+=cw[i]});y+=h});y+=4};
+ doc.setFillColor(...G);doc.rect(0,0,W,32,"F");doc.setTextColor(255,255,255);doc.setFont("helvetica","bold");doc.setFontSize(20);doc.text("E-CYCLE",M,15);doc.setFont("helvetica","normal");doc.setFontSize(10);doc.text("University E-Waste Management Initiative - UIT HPU, Shimla",M,22);doc.text("Ref: "+ref,W-M,15,{align:"right"});doc.text("Generated: "+new Date().toLocaleDateString("en-GB"),W-M,22,{align:"right"});y=44;
+ tx(t,18,1,G);tx("Period: "+(fr||"start")+" to "+(to||"present"),10,0,[91,103,112]);tx("Prepared by: "+by,10);y+=3;
+ if(sm){tx("Summary and remarks",13,1,G);tx(sm,10);y+=2}
+ const wt=rq.filter(recd).reduce((s,x)=>s+(+x.wt||0),0),n=s=>rq.filter(x=>s.includes(x.status)).length;
+ tx("Key figures",13,1,G);
+ tbl(["Measure","Value"],[["Total submissions",rq.length],["Pending (Submitted, Under Review)",n(["Submitted","Under Review"])],["Approved",n(["Approved"])],["Completed",n(["Completed"])],["Rejected",n(["Rejected"])],["Approx. weight received (kg)",wt.toFixed(1)],["Collection drives in period",dr.length]],[120,60]);
+ const grp=k=>{const o={};rq.forEach(x=>{const g=o[x[k]]||(o[x[k]]={n:0,w:0});g.n++;if(recd(x))g.w+=+x.wt||0});return Object.entries(o).map(([a,g])=>[a,g.n,g.w.toFixed(1)])};
+ tx("By category",13,1,G);rq.length?tbl(["Category","Requests","Weight received (kg)"],grp("cat"),[100,35,45]):tx("No requests in this period.",10);
+ tx("By department",13,1,G);rq.length?tbl(["Department","Requests","Weight received (kg)"],grp("dept"),[100,35,45]):tx("No requests in this period.",10);
+ tx("Request register",13,1,G);rq.length?tbl(["Request ID","Item","Department","Status","Wt (kg)"],rq.map(x=>[x.id,x.item+" x"+x.qty,x.dept,x.status,x.wt||"-"]),[32,58,38,36,16]):tx("No requests in this period.",10);
+ tx("Collection drives",13,1,G);dr.length?tbl(["Title","Date","Location"],dr.map(x=>[x.t,x.d,x.l]),[80,30,70]):tx("No drives recorded in this period.",10);
+ tx("Recycler handover: no handover records are included in this report. No organization is stated to be an authorized recycler.",9,0,[91,103,112]);
+ if(PH.length){tx("Device photographic record: before and after recycling",13,1,G);
+ [...new Set(PH.map(p=>p.q||""))].forEach(q=>{const r=rq.find(x=>x.id===q)||R().find(x=>x.id===q);need(20);tx(q?q+" - "+(r?r.item:""):"Devices not linked to a request",10,1);
+  const B=PH.filter(p=>(p.q||"")===q&&p.s!=="After"),A=PH.filter(p=>(p.q||"")===q&&p.s==="After"),n=Math.max(B.length,A.length);
+  for(let i=0;i<n;i++){const row=[[B[i],M,"Before recycling"],[A[i],M+92,"After recycling"]].map(([p,x,l])=>p&&{p,x,l,s:Math.min(85/p.w,60/p.h)}),h=Math.max(...row.map(o=>o?o.p.h*o.s:0));need(h+18);
+   row.forEach(o=>{if(!o)return;doc.setFont("helvetica","bold");doc.setFontSize(8);doc.setTextColor(91,103,112);doc.text(o.l,o.x,y);doc.addImage(o.p.d,"JPEG",o.x,y+2,o.p.w*o.s,o.p.h*o.s);doc.setFont("helvetica","normal");doc.splitTextToSize(o.p.c||"",85).slice(0,2).forEach((t,k)=>doc.text(t,o.x,y+h+6+k*3.5))});y+=h+16}})}
+ need(36);y+=12;doc.setDrawColor(31,41,55);doc.line(M,y,M+70,y);doc.line(W-M-70,y,W-M,y);y+=5;doc.setFont("helvetica","normal");doc.setFontSize(9);doc.text("Prepared by",M,y);doc.text("Reviewed by (Faculty Coordinator)",W-M-70,y);
+ const pc=doc.getNumberOfPages();for(let i=1;i<=pc;i++){doc.setPage(i);doc.setFontSize(8);doc.setTextColor(91,103,112);doc.text("E-CYCLE | UIT HPU, Shimla | "+ref+" | Figures come from records entered in this system",M,290);doc.text("Page "+i+" of "+pc,W-M,290,{align:"right"})}
+ const when=new Date().toLocaleString();idbPut({ref,title:t,by,from:fr,to,t:when,pdf:doc.output("blob"),photos:PH.map(p=>({...p}))}).then(ok=>{m.textContent=ok?"Report "+ref+" saved to the Archive and downloaded.":"Report "+ref+" downloaded, but this browser blocked saving it to the Archive.";arc()});doc.save(ref+".pdf");const L=get("ecy_rep");L.push({ref,t:when});put("ecy_rep",L);
+ m.textContent="Report "+ref+" generated. If no download started, open this site from your own web address and try again."});
+const idb=()=>new Promise((ok,no)=>{const q=indexedDB.open("ecycle",1);q.onupgradeneeded=()=>q.result.createObjectStore("reports",{keyPath:"ref"});q.onsuccess=()=>ok(q.result);q.onerror=()=>no(q.error)});
+const idbRun=async(mode,fn)=>{try{const d=await idb();return await new Promise((ok,no)=>{const t=d.transaction("reports",mode),r=fn(t.objectStore("reports"));t.oncomplete=()=>ok(r&&r.result!==undefined?r.result:true);t.onerror=()=>no()})}catch(e){return null}};
+const idbAll=()=>idbRun("readonly",s=>s.getAll()),idbPut=async v=>(await idbRun("readwrite",s=>s.put(v)))!==null,idbDel=k=>idbRun("readwrite",s=>s.delete(k));
+const ARC=[],okimg=s=>String(s||"").startsWith("data:image/jpeg;base64,");
+async function arcRep(){const b=$("#arr"),a=await idbAll();if(a===null){b.innerHTML='<tr><td colspan="7" class="mu">This browser does not allow saving reports here.</td></tr>';return}
+ ARC.length=0;a.sort((x,y)=>y.ref.localeCompare(x.ref)).forEach(x=>ARC.push(x));
+ b.innerHTML=ARC.length?ARC.map(r=>{const ph=(r.photos||[]).filter(p=>okimg(p.d));return `<tr><td>${esc(r.ref)}</td><td>${esc(r.title)}</td><td>${esc((r.from||"start")+" to "+(r.to||"present"))}</td><td>${esc(r.by)}</td><td>${esc(r.t)}</td><td>${ph.length?`<details><summary>${ph.length}</summary>${ph.map(p=>`<div style="margin:.3rem 0"><img src="${p.d}" alt="${esc(p.s)} photo" style="max-width:90px;border-radius:6px"><br><span class="mu">${esc(p.s)}${p.q?" · "+esc(p.q):""} ${esc(p.c)}</span></div>`).join("")}</details>`:"0"}</td><td><button class="btn o" data-dl="${esc(r.ref)}">Download</button><button class="btn o" data-del="${esc(r.ref)}">Delete</button></td></tr>`}).join(""):'<tr><td colspan="7" class="mu">No reports saved yet. Generate one on the Reports page.</td></tr>'}
+function arcSub(){const q=$("#asq").value.trim().toLowerCase(),r=R().filter(x=>!q||[x.id,x.item,x.name,x.dept,x.status,x.cat].join(" ").toLowerCase().includes(q));
+ $("#asr").innerHTML=r.length?r.map(x=>`<tr><td>${esc(x.id)}</td><td>${esc(x.ts?new Date(x.ts).toLocaleDateString("en-GB"):(x.hist&&x.hist[0]?x.hist[0].t:""))}</td><td>${esc(x.name)}<br><span class="mu">${esc(x.email)}</span></td><td>${esc(x.item)} ×${esc(x.qty)}</td><td>${esc(x.dept)}</td><td>${esc(x.status)}</td><td>${okimg(x.img)?`<img src="${x.img}" alt="Submitted photo" style="max-width:70px;border-radius:6px">`:"-"}</td></tr>`).join(""):'<tr><td colspan="7" class="mu">No submissions found.</td></tr>'}
+const arc=()=>{arcSub();arcRep()};
+$("#asq").addEventListener("input",arcSub);
+$("#arr").addEventListener("click",async e=>{const d=e.target.closest("[data-dl]"),x=e.target.closest("[data-del]");if(d){const r=ARC.find(v=>v.ref===d.dataset.dl);if(r){const a=document.createElement("a");a.href=URL.createObjectURL(r.pdf);a.download=r.ref+".pdf";a.click()}}if(x&&confirm("Delete report "+x.dataset.del+" from the archive?")){await idbDel(x.dataset.del);arc()}});
+$("#acsv").addEventListener("click",()=>$("#csv").click());
+quiz();route();arc();
+</script></body></html>
